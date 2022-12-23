@@ -1,0 +1,44 @@
+body {
+    background-color: #ebf7eb;
+    font-family: "Francois One", Tahoma, sans-serif; 
+    font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /*font style is for italics only, normal/italics/oblique*/
+    
+  }
+  h1 {
+    font-size: 2.2em;
+    text-align: left;
+    color: black;
+    padding-top: 2%;
+  }
+  p {
+    font-size: 1.4em; /*em is current font size, so it will scale off of user's settings*/
+    text-align: center;
+    color: green;
+  }
+  /*use # for those with id= of that name*/
+  
+.level{
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+}
+#label { 
+    color: black;
+    text-align: center;
+  }
+  img {
+    padding-top: 5%;
+  }
+
+#popup {
+    outline: solid black 2px;
+}  
+.buttons {
+    /*outline: solid black 2px;*/
+    display: flex; 
+    justify-content: left;
+    padding-left: 13.5%;
+}
