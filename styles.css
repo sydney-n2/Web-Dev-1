@@ -20,10 +20,11 @@ body {
   }
   /*use # for those with id= of that name*/
   
-.level{
+div.level{
     vertical-align: top;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 #label { 
     color: black;
@@ -31,14 +32,54 @@ body {
   }
   img {
     padding-top: 5%;
+    padding-bottom: 1%;
   }
 
-#popup {
-    outline: solid black 2px;
+#instructions_popup {
+    outline: double black 2px;
+    background-color: #d9d8d7;
+    /*padding: 0.25%;*/
+    display: none;
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 200%;
+    padding: 5px;
+    max-width: 10%;
 }  
-.buttons {
+.buttons { /* class named buttons, was attached to the container div */
     /*outline: solid black 2px;*/
     display: flex; 
-    justify-content: left;
-    padding-left: 13.5%;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    
+}
+
+#show_answers {
+    position: absolute;
+    left: 85%;
+}
+
+button { /*all the items of type <button> */
+  background-color: whitesmoke;
+  border: gainsboro solid 2px;
+  border-radius: 5px;
+  padding: 8px;
+  font-family: inherit; /* buttons do not automatically get the same font as the body */
+}
+
+button:hover {
+  background-color: gainsboro;
+}
+
+div.answers {
+  position: fixed; 
+  top: 10%;
+  border: solid 10px red;
+}
+
+button.answers {
+  background-color: transparent; 
+  border: white, solid, 5px; 
+  border-radius: 50%;
 }

@@ -1,4 +1,4 @@
-var i = document.getElementById('instructions');
+/*var i = document.getElementById('instructions');
 var p = document.getElementById('popup');
 
 i.onclick = function() {
@@ -8,6 +8,10 @@ i.onclick = function() {
         p.setAttribute("style", "display: none"); 
     }
 }
-/*p.} onmouseleave = function() {
+p.} onmouseleave = function() {
     p.setAttribute("style", "none");
 }*/
+
+$("#instructions").click(function(){
+    $("#instructions_popup").toggle();
+});
