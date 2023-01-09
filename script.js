@@ -1,17 +1,12 @@
-/*var i = document.getElementById('instructions');
-var p = document.getElementById('popup');
-
-i.onclick = function() {
-    if (p.getAttribute("style") == "display: none") {
-        p.setAttribute("style", "display: block");
-    } else {
-        p.setAttribute("style", "display: none"); 
-    }
-}
-p.} onmouseleave = function() {
-    p.setAttribute("style", "none");
-}*/
-
 $("#instructions").click(function(){
     $("#instructions_popup").toggle();
 });
+
+$("button.answers").click(function(){
+    $(this).css("border", "white solid 5px");
+});
+/* this will make the border appear when clicked on, so can only click on the correct answers on the right side image*/ 
+
+$("#show_answers").click(function(){
+    $("img").toggle();
+})

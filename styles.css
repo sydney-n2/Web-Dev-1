@@ -20,25 +20,73 @@ body {
   }
   /*use # for those with id= of that name*/
   
-div.level{
-    vertical-align: top;
-    display: flex;
-    justify-content: center;
+.level{
+    /*vertical-align: top;*/
+    display: block;
+    /* justify-content: center;*/
     position: relative;
+    /*outline: solid red 3px;*/
 }
 #label { 
     color: black;
-    text-align: center;
+    text-align: left;
+    padding-left: 10%;
   }
-  img {
-    padding-top: 5%;
+
+img {
+    width: 75%;
+    height: auto;
     padding-bottom: 1%;
+    margin: auto;
+    display: block;
   }
+#answers_img {
+  display: none;
+}
+
+button.answers {
+  background-color: transparent; 
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+}
+
+#a1_1 {
+  left: 905px;
+  top: 165px;
+}
+#a1_2{
+  left: 725px;
+  top: 370px;
+}
+#a1_3{
+  left: 793px;
+  top: 615px;
+}
+#a1_4{
+  left: 905px;
+  top: 575px;
+}
+#a1_5 {
+  left: 1045px; 
+  top: 280px;
+}
+#a1_6{
+  left:1018px; 
+  top: 385px;
+}
+#a1_7{
+  left:1100px; 
+  top: 600px;
+  height: 80px;
+}
 
 #instructions_popup {
     outline: double black 2px;
     background-color: #d9d8d7;
-    /*padding: 0.25%;*/
     display: none;
     font-size: 1.1em;
     position: absolute;
@@ -68,18 +116,6 @@ button { /*all the items of type <button> */
   font-family: inherit; /* buttons do not automatically get the same font as the body */
 }
 
-button:hover {
+button.tools:hover {
   background-color: gainsboro;
-}
-
-div.answers {
-  position: fixed; 
-  top: 10%;
-  border: solid 10px red;
-}
-
-button.answers {
-  background-color: transparent; 
-  border: white, solid, 5px; 
-  border-radius: 50%;
 }
