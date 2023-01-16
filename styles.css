@@ -53,6 +53,9 @@ button.answers {
   width: 60px;
   height: 60px;
 }
+button.answers:focus {
+  outline: none; /*so that users can't push tab to see where all the answers are*/
+}
 
 #a1_1 {
   left: 905px;
