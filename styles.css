@@ -40,11 +40,17 @@ img {
     margin: auto;
     display: block;
   }
-#answers_img {
+img.level2{
+  display: none;
+}
+#answers1_img {
+  display: none;
+}
+#answers2_img {
   display: none;
 }
 
-button.answers {
+button.answers1 {
   background-color: transparent; 
   border: none;
   border-radius: 50%;
@@ -53,7 +59,7 @@ button.answers {
   width: 60px;
   height: 60px;
 }
-button.answers:focus {
+button.answers1:focus {
   outline: none; /*so that users can't push tab to see where all the answers are*/
 }
 

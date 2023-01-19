@@ -5,28 +5,33 @@ $("#instructions").click(function(){
     $("#instructions_popup").toggle();
 });
 
-$("button.answers").click(function(){
+$("button.answers1").click(function(){
     $(this).css("border", "blue solid 5px");
 });
 // this will make the border appear when clicked on, so can only click on the correct answers on the right side image
 
 $("#show_answers").click(function(){
-    $("img").toggle();
-    if ($('button.answers').prop('disabled') == true){
-        $('button.answers').prop('disabled', false);
+    $(`img.level${level_counter}`).toggle();
+    $(`answers${level_counter}_img`).toggle();
+    if ($('button.answers1').prop('disabled') == true){
+        $('button.answers1').prop('disabled', false);
     }
     else {
-        $("button.answers").prop('disabled', true); 
+        $("button.answers1").prop('disabled', true); 
     } //prop for disabled property, not attribute 
 });
 
 $("#next_level").click(function(){
+    $(`img.level${level_counter}`).hide();
+    $(`answers${level_counter}_img`).hide();
     if (level_counter < num_levels){
         level_counter++;     //go to next level #
     }
     else {
         level_counter = 1; //reset after hit the end 
     }
+    $(`img.level${level_counter}`).show();
+    $(`#answers${level_counter}_img`).hide();
     //need to close all the things from the old level
     //and enable all of the things from the new level 
 });
