@@ -25,12 +25,15 @@ $("#next_level").click(function(){
     $(`img.level${level_counter}`).hide();
     $(`answers${level_counter}_img`).hide();
     $('button.answers1').hide();
-    $('button.answers1').prop('disabled', true); //this one does not generalize when adding more levels bc of button method
+    //$('button.answers1').prop('disabled', true); //this one does not generalize when adding more levels bc of button method
     if (level_counter < num_levels){
         level_counter++;     //go to next level #
     }
     else {
         level_counter = 1; //reset after hit the end 
+        $('button.answers1').show();
+        //$('button.answers1').prop('disabled', false); 
+        //hiding and showing retains the button functionality after going back to level 1 but also saves the answers from before
     }
     $("#label").text(`Level ${level_counter}:`);
     $(`img.level${level_counter}`).show();
