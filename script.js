@@ -24,6 +24,7 @@ $("#show_answers").click(function(){
 $("#next_level").click(function(){
     $(`img.level${level_counter}`).hide();
     $(`answers${level_counter}_img`).hide();
+    $('button.answers1').prop('disabled', true); //this one does not generalize when adding more levels bc of button method
     if (level_counter < num_levels){
         level_counter++;     //go to next level #
     }
