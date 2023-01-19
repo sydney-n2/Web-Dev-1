@@ -31,6 +31,7 @@ $("#next_level").click(function(){
     else {
         level_counter = 1; //reset after hit the end 
     }
+    $("#label").text(`Level ${level_counter}:`);
     $(`img.level${level_counter}`).show();
     $(`#answers${level_counter}_img`).hide();
     //need to close all the things from the old level
